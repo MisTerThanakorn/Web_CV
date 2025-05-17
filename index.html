@@ -662,80 +662,84 @@
 </section>
 
 
-    <section id="contact" class="bg-gradient-to-r from-indigo-800 via-gray-900 to-black dark:from-gray-900 dark:via-gray-800 dark:to-gray-700  shadow-2xl text-gray-100 py-16 px-4">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-mono font-bold tracking-wider uppercase">
-                    Contact Us
-                </h2>
-                <p class="mt-4 text-gray-400">
-                    Whether you have a question, a project idea, or just want to say
-                    hi, my inbox is always open.
-                </p>
-            </div>
-            <form action="mailto:youremail@example.com" method="POST"
-                enctype="text/plain" class="space-y-6">
-                <div class="flex flex-col md:flex-row md:space-x-4">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500 mt-4 md:mt-0" />
+    <section id="contact"
+        class="bg-gradient-to-r from-indigo-800 via-gray-900 to-black dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 shadow-2xl text-gray-100 py-16 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4">
+            <!-- Left Column: Title & Social Links -->
+            <div class="space-y-8">
+                <div class="text-center lg:text-left">
+                    <h2
+                        class="text-3xl sm:text-4xl font-mono font-bold tracking-wider uppercase">
+                        Contact Us
+                    </h2>
+                    <p class="mt-4 text-gray-400 text-sm sm:text-base">
+                        Whether you have a question, a project idea, or just want to
+                        say hi,
+                        my inbox is always open.
+                    </p>
                 </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <a href="https://github.com/MisTerThanakorn" target="_blank"
+                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                        <i class="fa-brands fa-square-github fa-lg sm:fa-2xl"></i>
+                        <span class="text-sm sm:text-base">MisTerThanakorn</span>
+                    </a>
+                    <a href="https://www.facebook.com/Thxnxkxrn" target="_blank"
+                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="image/facebook.png" alt="Facebook"
+                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
+                        <span class="text-sm sm:text-base">Thanakorn Namputta</span>
+                    </a>
+                    <a href="https://www.instagram.com/_.thana.n41/" target="_blank"
+                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="image/instagram.png" alt="Instagram"
+                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
+                        <span class="text-sm sm:text-base">_.thana.n41</span>
+                    </a>
+                    <a href="https://line.me/ti/p/RJ7es_bydy" target="_blank"
+                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="image/line.png" alt="Line"
+                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
+                        <span class="text-sm sm:text-base">•Thxnxkxrn•</span>
+                    </a>
+                </div>
+            </div>
 
-                <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <!-- Right Column: Contact Form -->
+            <div>
+                <form action="mailto:youremail@example.com" method="POST"
+                    enctype="text/plain" class="space-y-6">
+                    <div
+                        class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                        <input type="text" name="name" placeholder="Your Name"
+                            required
+                            class="flex-1 bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                        <input type="email" name="email" placeholder="Your Email"
+                            required
+                            class="flex-1 bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    </div>
 
-                <textarea
-                    name="message"
-                    rows="6"
-                    placeholder="Your Message"
-                    required
-                    class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    <input type="text" name="subject" placeholder="Subject"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
 
-                <button
-                    type="submit"
-                    class="inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-500 text-gray-100 font-mono font-semibold rounded-lg py-3 px-6 tracking-wide transition-colors duration-200">
-                    Send Message
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </button>
-            </form>
+                    <textarea name="message" rows="6" placeholder="Your Message"
+                        required
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
 
-            <div class="mt-12 flex justify-center space-x-6">
-                <a href="https://github.com/MisTerThanakorn" target="_blank" class="hover:text-indigo-400">
-                    <span class="sr-only">GitHub</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.333-5.467-5.931 0-1.31.467-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.042.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.874.118 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg>
-                </a>
-                <a href="#" target="_blank" class="hover:text-indigo-400">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.767s.784-1.767 1.75-1.767c.965 0 1.75.792 1.75 1.767s-.785 1.767-1.75 1.767zm13.5 11.268h-3v-5.604c0-1.337-.028-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.966v5.701h-3v-10h2.881v1.367h.041c.402-.76 1.381-1.561 2.845-1.561 3.041 0 3.604 2.003 3.604 4.604v5.59z" />
-                    </svg>
-                </a>
+                    <button type="submit"
+                        class="w-full sm:w-auto inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-500 text-gray-100 font-mono font-semibold rounded-lg py-3 px-6 tracking-wide transition-colors duration-200">
+                        Send Message
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
-        
     </section>
+
 
   
 </body>
