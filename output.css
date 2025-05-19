@@ -1227,6 +1227,9 @@
   .text-purple-500 {
     color: var(--color-purple-500);
   }
+  .text-red-200 {
+    color: var(--color-red-200);
+  }
   .text-red-300 {
     color: var(--color-red-300);
   }
@@ -1250,6 +1253,9 @@
   }
   .decoration-blue-200 {
     text-decoration-color: var(--color-blue-200);
+  }
+  .decoration-gray-200 {
+    text-decoration-color: var(--color-gray-200);
   }
   .decoration-green-200 {
     text-decoration-color: var(--color-green-200);
