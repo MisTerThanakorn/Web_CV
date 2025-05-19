@@ -1185,6 +1185,9 @@
   .text-blue-300 {
     color: var(--color-blue-300);
   }
+  .text-blue-400 {
+    color: var(--color-blue-400);
+  }
   .text-cyan-400 {
     color: var(--color-cyan-400);
   }
@@ -1253,6 +1256,9 @@
   }
   .decoration-blue-200 {
     text-decoration-color: var(--color-blue-200);
+  }
+  .decoration-blue-300 {
+    text-decoration-color: var(--color-blue-300);
   }
   .decoration-gray-200 {
     text-decoration-color: var(--color-gray-200);
@@ -1596,6 +1602,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-amber-950);
+      }
+    }
+  }
+  .group-hover\:text-blue-300 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-blue-300);
       }
     }
   }
