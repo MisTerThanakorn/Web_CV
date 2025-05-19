@@ -1,795 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link rel="icon" href="image/gundam.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <link rel="icon" href="image/gundam.png" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-..." crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
-    <title>Thanakorn Namputta</title>
-  </head>
-  <body>
-    <div id="nav" class="mx-auto sticky top-0 z-100 scroll-smooth">
-        <nav
-            class="bg-gray-900 text-gray-300 shadow-2xl">
-            <div
-                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#"
-                    class="group flex items-center space-x-4 p-3 rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-pink-900 hover:to-cyan-700 hover:shadow-xl">
-                    <div class="relative">
-                        <!-- ใช้ GIF แทนไอคอน -->
-                        <img
-                            src="image/spy.gif"
-                            alt="Animated Icon"
-                            class="h-12 w-12 rounded-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6" />
-                        <div
-                            class="absolute inset-0 rounded-full bg-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-25"></div>
-                    </div>
-                    <span
-                        class="self-center text-2xl font-semibold whitespace-nowrap transition-colors duration-300 ease-in-out text-gray-100 dark:text-gray-200 group-hover:text-white">
-                        THANAKORN
-                    </span>
-                </a>
-
-                <div class="flex md:order-2">
-                    <!-- input search desktop -->
-                    <div class="relative hidden md:block">
-                        <div
-                            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-400" fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                            </svg>
-                        </div>
-                        <input
-                            type="text"
-                            id="search-navbar"
-                            class="block w-full p-2 pl-10 text-sm text-gray-200 bg-transparent border border-gray-600 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
-                            placeholder="Search..." />
-                    </div>
-                    <!-- mobile menu toggle -->
-                    <button id="button-menu"
-                        data-collapse-toggle="navbar-menu"
-                        type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-300 rounded-lg hover:text-cyan-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-cyan-400 md:hidden transition"
-                        aria-controls="navbar-search"
-                        aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor"
-                            viewBox="0 0 17 14"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                </div>
-
+        <title>Thanakorn Namputta</title>
+    </head>
+    <body>
+        <div id="nav" class="mx-auto sticky top-0 z-100 scroll-smooth">
+            <nav
+                class="bg-gray-900 text-gray-300 shadow-2xl">
                 <div
-                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                    id="navbar-search">
-                    <div class="relative mt-3 md:hidden">
-                        <div
-                            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-400" fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                            </svg>
+                    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#"
+                        class="group flex items-center space-x-4 p-3 rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-pink-900 hover:to-cyan-700 hover:shadow-xl">
+                        <div class="relative">
+                            <!-- ใช้ GIF แทนไอคอน -->
+                            <img
+                                src="image/spy.gif"
+                                alt="Animated Icon"
+                                class="h-12 w-12 rounded-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6" />
+                            <div
+                                class="absolute inset-0 rounded-full bg-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-25"></div>
                         </div>
-                        <input
-                            type="text"
-                            id="search-navbar-mobile"
-                            class="block w-full p-2 pl-10 text-sm text-gray-200 bg-transparent border border-gray-600 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
-                            placeholder="Search..." />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap transition-colors duration-300 ease-in-out text-gray-100 dark:text-gray-200 group-hover:text-white">
+                            THANAKORN
+                        </span>
+                    </a>
+
+                    <div class="flex md:order-2">
+                        <!-- input search desktop -->
+                        <div class="relative hidden md:block">
+                            <div
+                                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-400" fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input
+                                type="text"
+                                id="search-navbar"
+                                class="block w-full p-2 pl-10 text-sm text-gray-200 bg-transparent border border-gray-600 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
+                                placeholder="Search..." />
+                        </div>
+                        <!-- mobile menu toggle -->
+                        <button id="button-menu"
+                            data-collapse-toggle="navbar-menu"
+                            type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-300 rounded-lg hover:text-cyan-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-cyan-400 md:hidden transition"
+                            aria-controls="navbar-search"
+                            aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 17 14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
                     </div>
 
-                    <ul
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                        <li>
-                            <a
-                                href="#home"
-                                data-target="#home"
-                                class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
-                                Home
-                                <span
-                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#about"
-                                data-target="#about"
-                                class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
-                                About
-                                <span
-                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#model"
-                                data-target="#model"
-                                class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
-                                Model
-                                <span
-                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#contact"
-                                data-target="#contact"
-                                class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
-                                Contact
-                                <span
-                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div
+                        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-search">
+                        <div class="relative mt-3 md:hidden">
+                            <div
+                                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-400" fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input
+                                type="text"
+                                id="search-navbar-mobile"
+                                class="block w-full p-2 pl-10 text-sm text-gray-200 bg-transparent border border-gray-600 rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
+                                placeholder="Search..." />
+                        </div>
+
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                            <li>
+                                <a
+                                    href="#home"
+                                    data-target="#home"
+                                    class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
+                                    Home
+                                    <span
+                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#about"
+                                    data-target="#about"
+                                    class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
+                                    About
+                                    <span
+                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#model"
+                                    data-target="#model"
+                                    class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
+                                    Model
+                                    <span
+                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    data-target="#contact"
+                                    class="group relative block py-2 pl-3 pr-4 text-gray-200 rounded md:p-0 transition-colors duration-200 hover:text-cyan-400">
+                                    Contact
+                                    <span
+                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-cyan-400 transform scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    <script id="nav">
-    // เมนู mobile toggle
-    const toggleBtn = document.querySelector('#button-menu');
-    const menu = document.getElementById('navbar-search');
-    toggleBtn.addEventListener('click', () => {
-        const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-        toggleBtn.setAttribute('aria-expanded', !isExpanded);
-        menu.classList.toggle('hidden');
-    });
-
-    // เก็บลิงก์ทั้งหมด
-    const navLinks = document.querySelectorAll('nav a[data-target]');
-
-    // ฟังก์ชันตั้ง active class
-    function setActive(link) {
-        navLinks.forEach(l => {
-        l.classList.remove('text-cyan-400', 'font-semibold');
-        l.classList.add('text-gray-200');
-        });
-        link.classList.add('text-cyan-400', 'font-semibold');
-        link.classList.remove('text-gray-200');
-    }
-
-    // คลิกไปยัง section พร้อม highlight
-    navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetEl = document.querySelector(link.dataset.target);
-        const offset = document.querySelector('#nav').offsetHeight;
-        const topPos = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: topPos, behavior: 'smooth' });
-        setActive(link);
-        });
-    });
-
-    // สังเกตการ scroll เพื่อเปลี่ยน active ตาม section
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const id = entry.target.id;
-            const activeLink = document.querySelector(`nav a[data-target="#${id}"]`);
-            if (activeLink) setActive(activeLink);
-        }
-        });
-    }, {
-        rootMargin: `-${window.innerHeight / 2}px 0px -${window.innerHeight / 2}px 0px`,
-        threshold: 0
-    });
-
-    // เริ่ม observe ทุก section ที่มี id
-    document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
-    </script>
-
-    <div id="home"
-        class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-900 via-gray-900 to-black shadow-2xl relative overflow-hidden">
-
-        <!-- Subtle Noise Overlay -->
-        <div
-            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-10 pointer-events-none"></div>
-
-        <!-- Animated Neon Grid Overlay -->
-        <style>
-        @keyframes grid-pan { 0% { transform: translate(0, 0);} 100% { transform: translate(-20px, -20px);} }
-        @keyframes grid-flicker { 0%,100% { opacity:1;} 50% { opacity:0.5;} }
-        .animate-grid-pan { animation: grid-pan 15s linear infinite; }
-        .animate-grid-flicker { animation: grid-flicker 2s ease-in-out infinite; }
-        </style>
-
-        <div class="absolute inset-0 z-0 pointer-events-none">
-            <svg class="w-full h-full animate-grid-pan animate-grid-flicker"
-                viewBox="0 0 100 100" preserveAspectRatio="none">
-                <defs>
-                    <pattern id="grid" width="10" height="10"
-                        patternUnits="userSpaceOnUse">
-                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#0ff3"
-                            stroke-width="0.5" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
+            </nav>
         </div>
 
-        <div
-            class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center w-full">
+        <script id="nav">
+            // เมนู mobile toggle
+            const toggleBtn = document.querySelector('#button-menu');
+            const menu = document.getElementById('navbar-search');
+            toggleBtn.addEventListener('click', () => {
+                const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                toggleBtn.setAttribute('aria-expanded', !isExpanded);
+                menu.classList.toggle('hidden');
+            });
+
+            // เก็บลิงก์ทั้งหมด
+            const navLinks = document.querySelectorAll('nav a[data-target]');
+
+            // ฟังก์ชันตั้ง active class
+            function setActive(link) {
+                navLinks.forEach(l => {
+                l.classList.remove('text-cyan-400', 'font-semibold');
+                l.classList.add('text-gray-200');
+                });
+                link.classList.add('text-cyan-400', 'font-semibold');
+                link.classList.remove('text-gray-200');
+            }
+
+            // คลิกไปยัง section พร้อม highlight
+            navLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetEl = document.querySelector(link.dataset.target);
+                const offset = document.querySelector('#nav').offsetHeight;
+                const topPos = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                setActive(link);
+                });
+            });
+
+            // สังเกตการ scroll เพื่อเปลี่ยน active ตาม section
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    const activeLink = document.querySelector(`nav a[data-target="#${id}"]`);
+                    if (activeLink) setActive(activeLink);
+                }
+                });
+            }, {
+                rootMargin: `-${window.innerHeight / 2}px 0px -${window.innerHeight / 2}px 0px`,
+                threshold: 0
+            });
+
+            // เริ่ม observe ทุก section ที่มี id
+            document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
+        </script>
+
+        <div id="home"
+            class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-900 via-gray-900 to-black shadow-2xl relative overflow-hidden">
+
+            <!-- Subtle Noise Overlay -->
             <div
-                class="group relative w-full sm:w-11/12 md:w-3/4 lg:w-1/2 p-6 rounded-3xl
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-10 pointer-events-none"></div>
+
+            <!-- Animated Neon Grid Overlay -->
+            <style>
+                @keyframes grid-pan { 0% { transform: translate(0, 0);} 100% { transform: translate(-20px, -20px);} }
+                @keyframes grid-flicker { 0%,100% { opacity:1;} 50% { opacity:0.5;} }
+                .animate-grid-pan { animation: grid-pan 15s linear infinite; }
+                .animate-grid-flicker { animation: grid-flicker 2s ease-in-out infinite; }
+            </style>
+
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <svg class="w-full h-full animate-grid-pan animate-grid-flicker"
+                    viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="10" height="10"
+                            patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none"
+                                stroke="#0ff3"
+                                stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <div
+                class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center items-center w-full">
+                <div
+                    class="group relative w-full sm:w-11/12 md:w-3/4 lg:w-1/2 p-6 rounded-3xl
                 bg-gradient-to-r from-gray-900 via-indigo-900 to-black animate-gradient-x bg-[length:200%_200%]">
 
-                <!-- Shadow Depth -->
-                <div
-                    class="absolute inset-0 rounded-2xl bg-black opacity-25 transform translate-x-2 translate-y-2
+                    <!-- Shadow Depth -->
+                    <div
+                        class="absolute inset-0 rounded-2xl bg-black opacity-25 transform translate-x-2 translate-y-2
                     group-hover:translate-x-5 group-hover:translate-y-5 transition-transform duration-500"></div>
 
-                <!-- Main Card -->
-                <div
-                    class="relative rounded-2xl bg-gradient-to-tr from-[#0f2027] via-[#203a43] to-[#2c5364]
+                    <!-- Main Card -->
+                    <div
+                        class="relative rounded-2xl bg-gradient-to-tr from-[#0f2027] via-[#203a43] to-[#2c5364]
                     text-white p-8 sm:p-12 transform transition-transform duration-500 ease-in-out
                     group-hover:scale-105 group-hover:-translate-y-3 shadow-[0_30px_60px_rgba(0,0,0,0.7)] overflow-hidden">
 
-                    <!-- Neon Shine Effect -->
-                    <div
-                        class="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-400
+                        <!-- Neon Shine Effect -->
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-400
                         opacity-0 group-hover:opacity-30 transition-opacity duration-800 blur-2xl pointer-events-none"></div>
 
-                    <!-- Avatar -->
-                    <div class="relative mx-auto mb-6 w-24 h-24 sm:w-32 sm:h-32">
-                        <img src="image/Robot.png" alt="Avatar"
-                            class="w-full h-full rounded-full object-cover transform transition-transform duration-500
-                        group-hover:rotate-6 shadow-lg" />
+                        <!-- Avatar -->
                         <div
-                            class="absolute inset-0 rounded-full border-4 border-cyan-400 animate-ping"></div>
-                    </div>
+                            class="relative mx-auto mb-6 w-24 h-24 sm:w-32 sm:h-32">
+                            <img src="image/Robot.png" alt="Avatar"
+                                class="w-full h-full rounded-full object-cover transform transition-transform duration-500
+                        group-hover:rotate-6 shadow-lg" />
+                            <div
+                                class="absolute inset-0 rounded-full border-4 border-cyan-400 animate-ping"></div>
+                        </div>
 
-                    <!-- Title -->
-                    <h1
-                        class="text-3xl sm:text-6xl font-extrabold text-transparent bg-clip-text animate-pulse tracking-wider
+                        <!-- Title -->
+                        <h1
+                            class="text-3xl sm:text-6xl font-extrabold text-transparent bg-clip-text animate-pulse tracking-wider
                         bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500
                         text-center mb-4 sm:mb-6 tracking-wider drop-shadow-[0_0_8px_rgba(0,255,255,0.7)]
                         transition-all duration-500 group-hover:drop-shadow-[0_0_20px_rgba(255,0,255,0.8)] font-mono">
-                        Developer
-                    </h1>
+                            Developer
+                        </h1>
 
-                    <!-- Divider -->
-                    <div
-                        class="mx-auto my-4 sm:my-6 h-0.5 w-24 sm:w-36 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-400"></div>
+                        <!-- Divider -->
+                        <div
+                            class="mx-auto my-4 sm:my-6 h-0.5 w-24 sm:w-36 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-400"></div>
 
-                    <!-- Skills -->
-                    <div
-                        class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono">
-                        <span
-                            class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
-                                    transform transition duration-300 hover:scale-110 hover:z-10">
+                        <!-- Skills -->
+                        <div
+                            class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono">
                             <span
-                                class="absolute inset-x-0 bottom-0 h-1 bg-pink-400 scale-x-0 group-hover:scale-x-100
-                            transition-transform origin-left duration-300"></span>
-                            HTML | CSS | JavaScript
-                        </span>
-                        <span
-                            class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
+                                class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
                                     transform transition duration-300 hover:scale-110 hover:z-10">
-                            <span
-                                class="absolute inset-x-0 bottom-0 h-1 bg-purple-500 scale-x-0 group-hover:scale-x-100
+                                <span
+                                    class="absolute inset-x-0 bottom-0 h-1 bg-pink-400 scale-x-0 group-hover:scale-x-100
                             transition-transform origin-left duration-300"></span>
-                            Tailwind CSS
-                        </span>
-                        <span
-                            class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
+                                HTML | CSS | JavaScript
+                            </span>
+                            <span
+                                class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
                                     transform transition duration-300 hover:scale-110 hover:z-10">
-                            <span
-                                class="absolute inset-x-0 bottom-0 h-1 bg-purple-500 scale-x-0 group-hover:scale-x-100
+                                <span
+                                    class="absolute inset-x-0 bottom-0 h-1 bg-purple-500 scale-x-0 group-hover:scale-x-100
                             transition-transform origin-left duration-300"></span>
-                            Boostsrap 5
-                        </span>
-                        <span
-                            class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
+                                Tailwind CSS
+                            </span>
+                            <span
+                                class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
                                     transform transition duration-300 hover:scale-110 hover:z-10">
-                            <span
-                                class="absolute inset-x-0 bottom-0 h-1 bg-cyan-400 scale-x-0 group-hover:scale-x-100
+                                <span
+                                    class="absolute inset-x-0 bottom-0 h-1 bg-purple-500 scale-x-0 group-hover:scale-x-100
                             transition-transform origin-left duration-300"></span>
-                            MySQL
-                        </span>
-                        <span
-                            class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
+                                Boostsrap 5
+                            </span>
+                            <span
+                                class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
                                     transform transition duration-300 hover:scale-110 hover:z-10">
-                            <span
-                                class="absolute inset-x-0 bottom-0 h-1 bg-cyan-400 scale-x-0 group-hover:scale-x-100
+                                <span
+                                    class="absolute inset-x-0 bottom-0 h-1 bg-cyan-400 scale-x-0 group-hover:scale-x-100
                             transition-transform origin-left duration-300"></span>
-                            Python
-                        </span>
-                        
+                                MySQL
+                            </span>
+                            <span
+                                class="group relative px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-semibold tracking-wide
+                                    transform transition duration-300 hover:scale-110 hover:z-10">
+                                <span
+                                    class="absolute inset-x-0 bottom-0 h-1 bg-cyan-400 scale-x-0 group-hover:scale-x-100
+                            transition-transform origin-left duration-300"></span>
+                                Python
+                            </span>
+
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div
+                            class="flex justify-center gap-6 sm:gap-8 mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            <a href="#"
+                                class="text-cyan-400 transform hover:-translate-y-1 hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor"
+                                    viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
+                            </a>
+                            <a href="#"
+                                class="text-purple-500 transform hover:-translate-y-1 hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor"
+                                    viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
+                            </a>
+                            <a href="#"
+                                class="text-pink-400 transform hover:-translate-y-1 hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor"
+                                    viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
+                            </a>
+                        </div>
+
                     </div>
-
-                    <!-- Social Icons -->
-                    <div
-                        class="flex justify-center gap-6 sm:gap-8 mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                        <a href="#"
-                            class="text-cyan-400 transform hover:-translate-y-1 hover:scale-110 transition-transform">
-                            <svg class="w-6 h-6" fill="currentColor"
-                                viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
-                        </a>
-                        <a href="#"
-                            class="text-purple-500 transform hover:-translate-y-1 hover:scale-110 transition-transform">
-                            <svg class="w-6 h-6" fill="currentColor"
-                                viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
-                        </a>
-                        <a href="#"
-                            class="text-pink-400 transform hover:-translate-y-1 hover:scale-110 transition-transform">
-                            <svg class="w-6 h-6" fill="currentColor"
-                                viewBox="0 0 24 24"><!-- fill with your SVG --></svg>
-                        </a>
-                    </div>
-
                 </div>
             </div>
         </div>
-    </div>
 
-    <section id="about" class="bg-gray-900 text-gray-100 py-16 px-4">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h2
-                    class="text-5xl font-mono font-bold tracking-widest uppercase text-indigo-400 animate-pulse hover:animate-bounce transition-all duration-500">
-                    About Me
-                </h2>
-                <p class="mt-4 text-gray-400 text-lg animate-fade-in">
-                    Dive into my journey as a developer, where code meets
-                    creativity.
-                </p>
-            </div>
+        <section id="about" class="bg-gray-900 text-gray-100 py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-5xl font-mono font-bold tracking-widest uppercase text-indigo-400 animate-pulse hover:animate-bounce transition-all duration-500">
+                        About Me
+                    </h2>
+                    <p class="mt-4 text-gray-400 text-lg animate-fade-in">
+                        Dive into my journey as a developer, where code meets
+                        creativity.
+                    </p>
+                </div>
 
-            <div class="flex flex-col items-center gap-8">
-                <div
-                    class="w-40 h-40 rounded-full overflow-hidden 
+                <div class="flex flex-col items-center gap-8">
+                    <div
+                        class="w-40 h-40 rounded-full overflow-hidden 
                             border-4 border-transparent 
                             bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 
                             p-1 relative group transform transition duration-500 ease-in-out 
                             hover:scale-110 hover:rotate-3 hover:shadow-2xl">
-                    <img src="image/studentphoto.jpg" alt="Your Name"
-                        class="object-cover w-full h-full rounded-full" />
-                </div>
-                <div class="text-center">
-                    <h3
-                        class="text-2xl font-mono font-semibold hover:text-indigo-300 transition-colors duration-300">[Thanakorn
-                        Namputta]</h3>
-                    <p class="text-gray-400 italic">Developer & Programmer</p>
-                </div>
-                <div class="space-y-6 w-full">
-                    <div class="space-y-4">
-                        <p
-                            class="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors duration-300">
-                            I'm a <span
-                                class="text-indigo-400 font-semibold">seasoned</span>
-                            software engineer with over <span
-                                class="text-indigo-400 font-semibold">X years</span>
-                            of hands-on experience.
-                        </p>
-                        <p
-                            class="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors duration-300">
-                            Beyond code, I actively contribute to open-source, host
-                            workshops, and mentor aspiring developers.
-                        </p>
+                        <img src="image/studentphoto.jpg" alt="Your Name"
+                            class="object-cover w-full h-full rounded-full" />
                     </div>
+                    <div class="text-center">
+                        <h3
+                            class="text-2xl font-mono font-semibold hover:text-indigo-300 transition-colors duration-300">[Thanakorn
+                            Namputta]</h3>
+                        <p class="text-gray-400 italic">Developer &
+                            Programmer</p>
+                    </div>
+                    <div class="space-y-6 w-full">
+                        <div class="space-y-4">
+                            <p
+                                class="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors duration-300">
+                                I'm a <span
+                                    class="text-indigo-400 font-semibold">seasoned</span>
+                                software engineer with over <span
+                                    class="text-indigo-400 font-semibold">X
+                                    years</span>
+                                of hands-on experience.
+                            </p>
+                            <p
+                                class="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors duration-300">
+                                Beyond code, I actively contribute to
+                                open-source, host
+                                workshops, and mentor aspiring developers.
+                            </p>
+                        </div>
 
-                    <div>
-                        <h4
-                            class="text-xl font-mono font-bold text-indigo-400 mb-4 animate-bounce">
-                            Skills
-                        </h4>
-                        <ul class="space-y-4">
-                        <li
-                            class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
+                        <div>
+                            <h4
+                                class="text-xl font-mono font-bold text-indigo-400 mb-4 animate-bounce">
+                                Skills
+                            </h4>
+                            <ul class="space-y-4">
+                                <li
+                                    class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
                                 shadow-lg transform transition duration-400
                                 hover:shadow-2xl hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500
                                 group animate-slide-in-left">
-                            <div class="flex items-center space-x-3">
-                            <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
-                            <span class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
-                                JavaScript
-                            </span>
-                            </div>
-                            <span
-                            class="px-3 py-1 text-sm font-medium rounded-full
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-brands fa-js"
+                                            style="color: #FFD43B;"></i>
+                                        <span
+                                            class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
+                                            JavaScript
+                                        </span>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 text-sm font-medium rounded-full
                                     bg-gradient-to-r from-pink-400 to-indigo-500
                                     text-white transform transition duration-300
                                     hover:animate-pulse-slow">
-                            Normal
-                            </span>
-                        </li>
+                                        Normal
+                                    </span>
+                                </li>
 
-                        <li
-                            class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
+                                <li
+                                    class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
                                 shadow-lg transform transition duration-400
                                 hover:shadow-2xl hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500
                                 group animate-slide-in-left"
-                            style="animation-delay: 0.1s;">
-                            <div class="flex items-center space-x-3">
-                            <i class="fa-brands fa-python" style="color: #1394f6;"></i>
-                            <span class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
-                                Python
-                            </span>
-                            </div>
-                            <span
-                            class="px-3 py-1 text-sm font-medium rounded-full
+                                    style="animation-delay: 0.1s;">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-brands fa-python"
+                                            style="color: #1394f6;"></i>
+                                        <span
+                                            class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
+                                            Python
+                                        </span>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 text-sm font-medium rounded-full
                                     bg-gradient-to-r from-pink-400 to-indigo-500
                                     text-white transform transition duration-300
                                     hover:animate-pulse-slow">
-                            Normal
-                            </span>
-                        </li>
+                                        Normal
+                                    </span>
+                                </li>
 
-                        <li
-                            class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
+                                <li
+                                    class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
                                 shadow-lg transform transition duration-400
                                 hover:shadow-2xl hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500
                                 group animate-slide-in-left"
-                            style="animation-delay: 0.2s;">
-                            <div class="flex items-center space-x-3">
-                            <i class="fa-brands fa-html5" style="color: #e5532d;"></i>
-                            <span class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
-                                HTML
-                            </span>
-                            </div>
-                            <span
-                            class="px-3 py-1 text-sm font-medium rounded-full
+                                    style="animation-delay: 0.2s;">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-brands fa-html5"
+                                            style="color: #e5532d;"></i>
+                                        <span
+                                            class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
+                                            HTML
+                                        </span>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 text-sm font-medium rounded-full
                                     bg-gradient-to-r from-pink-400 to-indigo-500
                                     text-white transform transition duration-300
                                     hover:animate-pulse-slow">
-                            Expertise
-                            </span>
-                        </li>
+                                        Expertise
+                                    </span>
+                                </li>
 
-                        <li
-                            class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
+                                <li
+                                    class="flex justify-between items-center px-4 py-3 rounded-xl bg-gray-800
                                 shadow-lg transform transition duration-400
                                 hover:shadow-2xl hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500
                                 group animate-slide-in-left"
-                            style="animation-delay: 0.3s;">
-                            <div class="flex items-center space-x-3">
-                                <i class="fa-brands fa-css3-alt" style="color: #36afe1;"></i>
-                                <span class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
-                                    CSS 
-                                </span>
-                            </div>
-                            <span
-                            class="px-3 py-1 text-sm font-medium rounded-full
+                                    style="animation-delay: 0.3s;">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-brands fa-css3-alt"
+                                            style="color: #36afe1;"></i>
+                                        <span
+                                            class="font-semibold text-lg text-gray-200 group-hover:text-white transition-colors duration-300">
+                                            CSS
+                                        </span>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 text-sm font-medium rounded-full
                                     bg-gradient-to-r from-pink-400 to-indigo-500
                                     text-white transform transition duration-300
                                     hover:animate-pulse-slow">
-                            Normal
-                            </span>
-                        </li>
-                        </ul>
+                                        Normal
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4
+                                class="text-xl font-mono font-bold text-indigo-400 mb-4">Journey</h4>
+                            <div
+                                class="relative border-l-2 border-gray-700 ml-2">
+                                <div class="mb-8 pl-6 relative group">
+                                    <div
+                                        class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
+                                    <p
+                                        class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2564</p>
+                                    <p class="text-gray-400">WEB APPLICATION
+                                        DEVELOPMENT</p>
+                                    <p
+                                        class="text-gray-400">เริ่มต้นศึกษาการเขียนเว็บไซต์
+                                        และ API </p>
+                                </div>
+                                <div class="mb-8 pl-6 relative group">
+                                    <div
+                                        class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
+                                    <p
+                                        class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2565</p>
+                                    <p class="text-gray-400">WEB DESIGN
+                                        TECHNOLOGIES</p>
+                                </div>
+                                <div class="pl-6 relative group">
+                                    <div
+                                        class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
+                                    <p
+                                        class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2565</p>
+                                    <p class="text-gray-400">MOBILE APPLICATION
+                                        DEVELOPMENT</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#contact"
+                                class="inline-flex items-center bg-indigo-600 hover:bg-indigo-500 font-mono font-semibold rounded-lg py-3 px-6 transition-all duration-200 transform hover:scale-110 hover:animate-pulse">
+                                Work With Me
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-2 animate-hammer hover:animate-bounce"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div>
-                        <h4
-                            class="text-xl font-mono font-bold text-indigo-400 mb-4">Journey</h4>
-                        <div class="relative border-l-2 border-gray-700 ml-2">
-                            <div class="mb-8 pl-6 relative group">
-                                <div
-                                    class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
-                                <p
-                                    class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2564</p>
-                                <p class="text-gray-400">WEB APPLICATION
-                                    DEVELOPMENT</p>
-                                <p
-                                    class="text-gray-400">เริ่มต้นศึกษาการเขียนเว็บไซต์
-                                    และ API </p>
+        <div id="model"
+            class="relative overflow-hidden bg-gradient-to-r from-indigo-900 via-gray-900 to-black py-16 px-4 sm:px-6 lg:px-8">
+
+            <div class="absolute inset-0 pointer-events-none">
+                <div
+                    class="absolute top-10 left-1/4 w-1/2 h-px bg-gradient-to-r from-green-400 to-blue-500 opacity-20 animate-pulse"></div>
+                <div
+                    class="absolute bottom-10 right-1/4 w-1/3 h-px bg-gradient-to-l from-purple-500 to-pink-500 opacity-20 animate-pulse"></div>
+            </div>
+
+            <div class="relative z-10 text-center mb-12">
+                <h1
+                    class="inline-block text-4xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-400 to-purple-500 hover:scale-110 transform transition duration-500 ease-out">
+                    Image Colorization
+                </h1>
+                <p class="mt-2 text-gray-400 italic">Bring your B&W photos back
+                    to life ✨</p>
+            </div>
+
+            <div
+                class="relative z-10 max-w-6xl mx-auto bg-gradient-to-tr from-[#0f2027] via-[#203a43] to-[#2c5364] rounded-3xl shadow-2xl p-8 sm:p-12 text-white ring-1 ring-green-400 ring-opacity-20">
+                <div
+                    class="flex flex-col lg:flex-row gap-12 items-center justify-center">
+
+                    <!-- Left: Upload, Preview & Result -->
+                    <div
+                        class="flex-1 flex flex-col items-center space-y-8 max-w-xl w-full">
+                        <h2
+                            class="text-2xl sm:text-3xl font-semibold mb-4 text-center">Upload
+                            & Colorize</h2>
+
+                        <!-- Upload & Preview Section -->
+                        <div class="flex flex-col items-center gap-4 w-full">
+                            <label for="bwInput"
+                                class="flex items-center space-x-3 cursor-pointer">
+                                <svg
+                                    class="w-8 h-8 text-green-400 hover:text-green-300 transition-colors"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M4 3a2 2 0 00-2 2v2h2V5h2V3H4zM4 13H2v2a2 2 0 002 2h2v-2H4v-2zm12-10h-2v2h2v2h2V5a2 2 0 00-2-2zm0 14h-2v2h2a2 2 0 002-2v-2h-2v2z" />
+                                </svg>
+                                <span
+                                    class="text-sm sm:text-base text-gray-300">Choose
+                                    B&amp;W Image</span>
+                                <input id="bwInput" type="file" accept="image/*"
+                                    class="hidden" />
+                            </label>
+
+                            <!-- Preview Image -->
+                            <div id="previewContainer"
+                                class="w-full text-center hidden">
+                                <h3
+                                    class="text-xl font-medium mb-2">Preview:</h3>
+                                <div class="flex justify-center">
+                                    <img id="previewImg"
+                                        alt="Selected image preview"
+                                        class="max-w-full max-h-80 h-auto rounded-lg shadow-inner" />
+                                </div>
                             </div>
-                            <div class="mb-8 pl-6 relative group">
+
+                            <button id="uploadBtn"
+                                class="px-6 py-3 bg-gradient-to-r from-green-400 to-blue-500 rounded-full shadow-lg hover:from-green-300 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                                <span
+                                    class="inline-flex items-center space-x-2">
+                                    <svg class="w-5 h-5 animate-bounce"
+                                        fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M3 3h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2z" />
+                                    </svg>
+                                    <span>Colorize</span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="w-full text-center">
+                            <h3 class="text-xl font-medium mb-3">Result:</h3>
+                            <div
+                                class="relative inline-block bg-gray-800 p-4 rounded-xl shadow-inner ring-2 ring-blue-400 ring-opacity-50 overflow-hidden">
+                                <img id="resultImg" alt="Colored result"
+                                    class="max-w-full h-auto max-h-96 rounded-lg transition-transform duration-300 hover:scale-105 mx-auto" />
+                                <!-- Glitch frame on hover -->
                                 <div
-                                    class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
-                                <p
-                                    class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2565</p>
-                                <p class="text-gray-400">WEB DESIGN TECHNOLOGIES</p>
-                            </div>
-                            <div class="pl-6 relative group">
-                                <div
-                                    class="absolute -left-3 top-0 bg-indigo-500 w-6 h-6 rounded-full border-2 border-gray-900 group-hover:bg-indigo-400 transition-colors duration-300"></div>
-                                <p
-                                    class="font-mono font-semibold text-gray-100 group-hover:text-indigo-300 transition-colors duration-300">2565</p>
-                                <p class="text-gray-400">MOBILE APPLICATION
-                                    DEVELOPMENT</p>
+                                    class="absolute inset-0 bg-gradient-to-r from-green-200 to-blue-200 opacity-0 hover:opacity-10 mix-blend-screen animate-pulse pointer-events-none"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="text-center">
-                        <a href="#contact"
-                            class="inline-flex items-center bg-indigo-600 hover:bg-indigo-500 font-mono font-semibold rounded-lg py-3 px-6 transition-all duration-200 transform hover:scale-110 hover:animate-pulse">
-                            Work With Me
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 ml-2 animate-hammer hover:animate-bounce"
-                                fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-   <section id="model" class="relative overflow-hidden bg-gradient-to-r from-indigo-900 via-gray-900 to-black py-16 px-4 sm:px-6 lg:px-8">
-    
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-10 left-1/4 w-1/2 h-px bg-gradient-to-r from-green-400 to-blue-500 opacity-20 animate-pulse"></div>
-            <div class="absolute bottom-10 right-1/4 w-1/3 h-px bg-gradient-to-l from-purple-500 to-pink-500 opacity-20 animate-pulse"></div>
-        </div>
-
-    
-        <div class="relative z-10 text-center mb-12">
-            <h1 class="inline-block text-4xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-400 to-purple-500 hover:scale-110 transform transition duration-500 ease-out">
-            Image Colorization
-            </h1>
-            <p class="mt-2 text-gray-400 italic">Bring your B&W photos back to life ✨</p>
-        </div>
-
-        <div class="relative z-10 max-w-6xl mx-auto bg-gradient-to-tr from-[#0f2027] via-[#203a43] to-[#2c5364] rounded-3xl shadow-2xl p-8 sm:p-12 text-white ring-1 ring-green-400 ring-opacity-20">
-            <div class="flex flex-col lg:flex-row gap-12 items-center justify-center">
-
-            <!-- Left: Upload, Preview & Result -->
-            <div class="flex-1 flex flex-col items-center space-y-8 max-w-xl w-full">
-                <h2 class="text-2xl sm:text-3xl font-semibold mb-4 text-center">Upload & Colorize</h2>
-
-                <!-- Upload & Preview Section -->
-                <div class="flex flex-col items-center gap-4 w-full">
-                <label for="bwInput" class="flex items-center space-x-3 cursor-pointer">
-                    <svg class="w-8 h-8 text-green-400 hover:text-green-300 transition-colors" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M4 3a2 2 0 00-2 2v2h2V5h2V3H4zM4 13H2v2a2 2 0 002 2h2v-2H4v-2zm12-10h-2v2h2v2h2V5a2 2 0 00-2-2zm0 14h-2v2h2a2 2 0 002-2v-2h-2v2z"/>
-                    </svg>
-                    <span class="text-sm sm:text-base text-gray-300">Choose B&amp;W Image</span>
-                    <input id="bwInput" type="file" accept="image/*" class="hidden" />
-                </label>
-
-                <!-- Preview Image -->
-                <div id="previewContainer" class="w-full text-center hidden">
-                    <h3 class="text-xl font-medium mb-2">Preview:</h3>
-                    <div class="flex justify-center">
-                    <img id="previewImg" alt="Selected image preview" class="max-w-full max-h-80 h-auto rounded-lg shadow-inner" />
-                    </div>
-                </div>
-
-                <button id="uploadBtn"
-                    class="px-6 py-3 bg-gradient-to-r from-green-400 to-blue-500 rounded-full shadow-lg hover:from-green-300 hover:to-blue-600 transform hover:scale-105 transition duration-300">
-                    <span class="inline-flex items-center space-x-2">
-                    <svg class="w-5 h-5 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M3 3h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2zm0 6h14a1 1 0 010 2H3a1 1 0 110-2z"/>
-                    </svg>
-                    <span>Colorize</span>
-                    </span>
-                </button>
-                </div>
-
-                <!-- Result Section -->
-                <div class="w-full text-center">
-                <h3 class="text-xl font-medium mb-3">Result:</h3>
-                <div class="relative inline-block bg-gray-800 p-4 rounded-xl shadow-inner ring-2 ring-blue-400 ring-opacity-50 overflow-hidden">
-                    <img id="resultImg" alt="Colored result"
-                    class="max-w-full h-auto max-h-96 rounded-lg transition-transform duration-300 hover:scale-105 mx-auto" />
-                    <!-- Glitch frame on hover -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-green-200 to-blue-200 opacity-0 hover:opacity-10 mix-blend-screen animate-pulse pointer-events-none"></div>
-                </div>
-                </div>
-            </div>
-
-            <!-- Right: Sample Image -->
-            <div class="flex-1 flex flex-col items-center max-w-xl w-full">
-                <h2 class="text-2xl font-semibold mb-4">Sample Image</h2>
-                <div class="relative bg-gray-800 p-4 rounded-xl shadow-lg overflow-hidden">
-                <img src="image/Test_Colorization.jpg" alt="Sample Image"
-                    class="max-w-full h-auto max-h-96 rounded-lg transition-transform duration-300 hover:scale-105 mx-auto" />
-                <div class="absolute top-2 right-2 bg-green-400 text-black text-xs font-mono px-2 py-1 rounded animate-ping opacity-80">
-                    Demo
-                </div>
-                </div>
-                <p class="text-gray-500 mt-3 text-sm text-center">Upload your own B&amp;W image &amp; watch the magic!</p>
-            </div>
-
-            </div>
-        </div>
-
-    
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-5 pointer-events-none"></div>
-
-      <script>
-        const input = document.getElementById('bwInput');
-        const previewContainer = document.getElementById('previewContainer');
-        const previewImg = document.getElementById('previewImg');
-        const uploadBtn = document.getElementById('uploadBtn');
-        const resultImg = document.getElementById('resultImg');
-
-        // Show preview when an image is selected
-        input.addEventListener('change', () => {
-        if (!input.files.length) {
-            previewContainer.classList.add('hidden');
-            previewImg.src = '';
-            return;
-        }
-        const file = input.files[0];
-        const url = URL.createObjectURL(file);
-        previewImg.src = url;
-        previewContainer.classList.remove('hidden');
-        });
-
-        // Colorize button click
-        uploadBtn.addEventListener('click', async () => {
-        if (!input.files.length) { alert('กรุณาเลือกภาพก่อน'); return; }
-
-        const formData = new FormData();
-        formData.append('image', input.files[0]);
-
-        try {
-            const res = await fetch('http://127.0.0.1:5000/colorize', {
-            method: 'POST',
-            body: formData
-            });
-            console.log('Fetch response status:', res.status);
-
-            if (!res.ok) {
-            const text = await res.text();
-            console.error('Server response:', text);
-            throw new Error(`Status ${res.status}`);
-            }
-
-            const blob = await res.blob();
-            const resultURL = URL.createObjectURL(blob);
-            resultImg.src = resultURL;
-        } catch (err) {
-            console.error('Fetch error:', err);
-            alert('เกิดข้อผิดพลาดในการประมวลผลภาพ\nดูคอนโซลเพื่อดูรายละเอียด');
-        }
-        });
-      </script>
-</section>
-
-
-    <section id="contact"
-        class="bg-gradient-to-r from-indigo-800 via-gray-900 to-black dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 shadow-2xl text-gray-100 py-16 px-4">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4">
-            <!-- Left Column: Title & Social Links -->
-            <div class="space-y-8">
-                <div class="text-center lg:text-left">
-                    <h2
-                        class="text-3xl sm:text-4xl font-mono font-bold tracking-wider uppercase">
-                        Contact Us
-                    </h2>
-                    <p class="mt-4 text-gray-400 text-sm sm:text-base">
-                        Whether you have a question, a project idea, or just want to
-                        say hi,
-                        my inbox is always open.
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                    <a href="https://github.com/MisTerThanakorn" target="_blank"
-                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        <i class="fa-brands fa-square-github fa-lg sm:fa-2xl"></i>
-                        <span class="text-sm sm:text-base">MisTerThanakorn</span>
-                    </a>
-                    <a href="https://www.facebook.com/Thxnxkxrn" target="_blank"
-                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        <img src="image/facebook.png" alt="Facebook"
-                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
-                        <span class="text-sm sm:text-base">Thanakorn Namputta</span>
-                    </a>
-                    <a href="https://www.instagram.com/_.thana.n41/" target="_blank"
-                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        <img src="image/instagram.png" alt="Instagram"
-                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
-                        <span class="text-sm sm:text-base">_.thana.n41</span>
-                    </a>
-                    <a href="https://line.me/ti/p/RJ7es_bydy" target="_blank"
-                        class="flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        <img src="image/line.png" alt="Line"
-                            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
-                        <span class="text-sm sm:text-base">•Thxnxkxrn•</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Column: Contact Form -->
-            <div>
-                <form action="mailto:youremail@example.com" method="POST"
-                    enctype="text/plain" class="space-y-6">
+                    <!-- Right: Sample Image -->
                     <div
-                        class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-                        <input type="text" name="name" placeholder="Your Name"
-                            required
-                            class="flex-1 bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                        <input type="email" name="email" placeholder="Your Email"
-                            required
-                            class="flex-1 bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                        class="flex-1 flex flex-col items-center max-w-xl w-full">
+                        <h2 class="text-2xl font-semibold mb-4">Sample
+                            Image</h2>
+                        <div
+                            class="relative bg-gray-800 p-4 rounded-xl shadow-lg overflow-hidden">
+                            <img src="image/Test_Colorization.jpg"
+                                alt="Sample Image"
+                                class="max-w-full h-auto max-h-96 rounded-lg transition-transform duration-300 hover:scale-105 mx-auto" />
+                            <div
+                                class="absolute top-2 right-2 bg-green-400 text-black text-xs font-mono px-2 py-1 rounded animate-ping opacity-80">
+                                Demo
+                            </div>
+                        </div>
+                        <p class="text-gray-500 mt-3 text-sm text-center">Upload
+                            your own B&amp;W image &amp; watch the magic!</p>
                     </div>
 
-                    <input type="text" name="subject" placeholder="Subject"
-                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+            </div>
 
-                    <textarea name="message" rows="6" placeholder="Your Message"
-                        required
-                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-5 pointer-events-none"></div>
 
-                    <button type="submit"
-                        class="w-full sm:w-auto inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-500 text-gray-100 font-mono font-semibold rounded-lg py-3 px-6 tracking-wide transition-colors duration-200">
-                        Send Message
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </button>
-                </form>
+            <script>
+                const input = document.getElementById('bwInput');
+                const previewContainer = document.getElementById('previewContainer');
+                const previewImg = document.getElementById('previewImg');
+                const uploadBtn = document.getElementById('uploadBtn');
+                const resultImg = document.getElementById('resultImg');
+
+                // Show preview when an image is selected
+                input.addEventListener('change', () => {
+                if (!input.files.length) {
+                    previewContainer.classList.add('hidden');
+                    previewImg.src = '';
+                    return;
+                }
+                const file = input.files[0];
+                const url = URL.createObjectURL(file);
+                previewImg.src = url;
+                previewContainer.classList.remove('hidden');
+                });
+
+                // Colorize button click
+                uploadBtn.addEventListener('click', async () => {
+                if (!input.files.length) { alert('กรุณาเลือกภาพก่อน'); return; }
+
+                const formData = new FormData();
+                formData.append('image', input.files[0]);
+
+                try {
+                    const res = await fetch('http://127.0.0.1:5000/colorize', {
+                    method: 'POST',
+                    body: formData
+                    });
+                    console.log('Fetch response status:', res.status);
+
+                    if (!res.ok) {
+                    const text = await res.text();
+                    console.error('Server response:', text);
+                    throw new Error(`Status ${res.status}`);
+                    }
+
+                    const blob = await res.blob();
+                    const resultURL = URL.createObjectURL(blob);
+                    resultImg.src = resultURL;
+                } catch (err) {
+                    console.error('Fetch error:', err);
+                    alert('เกิดข้อผิดพลาดในการประมวลผลภาพ\nดูคอนโซลเพื่อดูรายละเอียด');
+                }
+                });
+            </script>
+        </div>
+
+        <div id="contact"
+            class="bg-[#0b0f1f] text-gray-100 py-16 px-6 sm:px-8 lg:px-10">
+            <!-- Section Header -->
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2
+                    class="text-4xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    Contact Me
+                </h2>
+                <p class="mt-2 text-lg text-gray-400 italic">
+                    Reach out for collaborations or just a friendly chat.
+                </p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div
+                class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card: Links -->
+                <div class="bg-[#1a1f3b] rounded-2xl shadow-lg p-6">
+                    <h3
+                        class="text-2xl font-semibold text-purple-300 mb-4">Socials</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i
+                                class="fab fa-github fa-lg text-gray-200 w-6"></i>
+                            <a href="#"
+                                class="ml-3 text-gray-200 hover:text-purple-400 transition">github.com/MisTerThanakorn</a>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="image/facebook.png" alt="Facebook"
+                                class="w-6 h-6" />
+                            <a href="#"
+                                class="ml-3 text-gray-200 hover:text-blue-400 transition">Thanakorn
+                                Namputta</a>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="image/instagram.png" alt="Instagram"
+                                class="w-6 h-6" />
+                            <a href="#"
+                                class="ml-3 text-gray-200 hover:text-pink-400 transition">_.thana.n41</a>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="image/line.png" alt="Line"
+                                class="w-6 h-6" />
+                            <a href="#"
+                                class="ml-3 text-gray-200 hover:text-green-400 transition">•Thxnxkxrn•</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card: Contact Form -->
+                <div class="bg-[#1a1f3b] rounded-2xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-purple-300 mb-4">Send
+                        a Message</h3>
+                    <form class="space-y-5">
+                        <div>
+                            <label for="name"
+                                class="block text-gray-400 mb-1">Name</label>
+                            <input id="name" type="text" placeholder="Your Name"
+                                required
+                                class="w-full bg-[#0b0f1f] border border-gray-700 rounded-md px-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block text-gray-400 mb-1">Email</label>
+                            <input id="email" type="email"
+                                placeholder="you@domain.com" required
+                                class="w-full bg-[#0b0f1f] border border-gray-700 rounded-md px-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block text-gray-400 mb-1">Message</label>
+                            <textarea id="message" rows="4"
+                                placeholder="Your Message..." required
+                                class="w-full bg-[#0b0f1f] border border-gray-700 rounded-md px-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500 resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
 
 
-  
-</body>
+    </body>
 
-  <footer class="bg-gray-900 text-gray-300 font-mono py-12">
-    <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
-        
-        <!-- Dev Logo -->
-        <div class="flex items-center mb-8 lg:mb-0 space-x-3">
-        <div class="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center animate-pulse">
-            <span class="text-black font-bold">{"</>"}</span>
+    <footer class="bg-gray-900 text-gray-300 font-mono py-12">
+        <div
+            class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
+
+            <div class="flex items-center mb-8 lg:mb-0 space-x-3">
+                <div
+                    class="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center animate-pulse">
+                    <img
+                        src="image/spy.gif" alt="Animated Icon"
+                        class=" rounded-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6" />
+
+                </div>
+                <span
+                    class="text-2xl text-green-400 font-semibold">Thanakorn</span>
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="#"
+                    class="group relative transform hover:-translate-y-1 transition-transform duration-200">
+                    <i class="fa-brands fa-square-github fa-lg sm:fa-2xl"></i>
+                    <span
+                        class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">GitHub</span>
+                </a>
+                <a href="#"
+                    class="group relative transform hover:-translate-y-1 transition-transform duration-200">
+                    <img src="image/facebook.png" alt="Facebook"
+                        class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" />
+                    <span
+                        class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-blue-400 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Facebook</span>
+                </a>
+                <a href="#"
+                    class="group relative transform hover:-translate-y-1 transition-transform duration-200">
+                    <svg
+                        class="w-6 h-6 fill-current text-gray-300 group-hover:text-white"
+                        viewBox="0 0 24 24"><path
+                            d="M2 3.75A.75.75 0 012.75 3h18.5a.75.75 0 01.75.75v16.5a.75.75 0 01-.75.75H2.75a.75.75 0 01-.75-.75V3.75zM8.5 8.5H6v7h2.5v-7zm3.25 0H9.5v7h2.25c1.24 0 1.75-.7 1.75-1.75v-3.5c0-1.05-.51-1.75-1.75-1.75zm7.25 0h-1.5l-1.75 4.15L14.75 8.5h-1.5v7h1.5v-4.35l1.75 4.35h1.5l1.75-4.35V15.5h1.5v-7z" /></svg>
+                    <span
+                        class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">DEV</span>
+                </a>
+            </div>
         </div>
-        <span class="text-2xl text-green-400 font-semibold">DevCorner</span>
+        <div
+            class="mt-10 border-t border-gray-800 pt-4 text-center text-xs text-gray-500">
+            © 2025 Thanakorn Namputta <span
+                class="text-green-500 animate-pulse">❤</span>
         </div>
-        
-        <!-- Quick Links -->
-        <ul class="flex flex-wrap justify-center lg:justify-start gap-6 mb-8 lg:mb-0">
-        <li><a href="#" class="relative after:block after:absolute after:w-0 after:h-0.5 after:bg-green-400 after:bottom-0 after:left-0 hover:after:w-full after:transition-width duration-300">Home</a></li>
-        <li><a href="#" class="relative after:block after:absolute after:w-0 after:h-0.5 after:bg-green-400 after:bottom-0 after:left-0 hover:after:w-full after:transition-width duration-300">Docs</a></li>
-        <li><a href="#" class="relative after:block after:absolute after:w-0 after:h-0.5 after:bg-green-400 after:bottom-0 after:left-0 hover:after:w-full after:transition-width duration-300">Blog</a></li>
-        <li><a href="#" class="relative after:block after:absolute after:w-0 after:h-0.5 after:bg-green-400 after:bottom-0 after:left-0 hover:after:w-full after:transition-width duration-300">Contact</a></li>
-        </ul>
-        
-        <!-- Social / Dev Icons -->
-        <div class="flex space-x-6">
-        <!-- GitHub -->
-        <a href="#" class="group relative transform hover:-translate-y-1 transition-transform duration-200">
-            <svg class="w-6 h-6 fill-current text-gray-300 group-hover:text-green-400" viewBox="0 0 16 16"><path d="M8 .198a8 8 0 00-2.53 15.59c.4.074.55-.174.55-.387 0-.19-.007-.694-.01-1.36-2.24.487-2.71-1.08-2.71-1.08-.364-.924-.89-1.17-.89-1.17-.727-.5.055-.49.055-.49.8.056 1.22.82 1.22.82.714 1.223 1.872.87 2.33.665.073-.517.28-.87.508-1.07-1.786-.203-3.662-.893-3.662-3.973 0-.877.312-1.593.823-2.154-.083-.203-.357-1.017.078-2.12 0 0 .672-.215 2.2.82a7.66 7.66 0 012.002-.27c.68.003 1.366.092 2.002.27 1.527-1.035 2.198-.82 2.198-.82.436 1.103.162 1.917.08 2.12.513.561.823 1.277.823 2.154 0 3.088-1.88 3.768-3.67 3.967.288.25.543.74.543 1.492 0 1.077-.01 1.945-.01 2.21 0 .215.148.464.554.385A8 8 0 008 .198z"/></svg>
-            <span class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">GitHub</span>
-        </a>
-        <!-- Twitter -->
-        <a href="#" class="group relative transform hover:-translate-y-1 transition-transform duration-200">
-            <svg class="w-6 h-6 fill-current text-gray-300 group-hover:text-blue-400" viewBox="0 0 24 24"><path d="M23 2.999a10.9 10.9 0 01-3.14.86 5.5 5.5 0 002.4-3.03 11 11 0 01-3.48 1.33A5.48 5.48 0 0016.5 2a5.5 5.5 0 00-5.36 6.77A15.6 15.6 0 012 4.9a5.5 5.5 0 001.7 7.34 5.47 5.47 0 01-2.5-.7v.07a5.5 5.5 0 004.4 5.4 5.5 5.5 0 01-2.49.1 5.5 5.5 0 005.12 3.8A11 11 0 012 19.54a15.5 15.5 0 008.4 2.46c10.07 0 15.58-8.35 15.58-15.58 0-.24 0-.48-.02-.72A11.1 11.1 0 0023 2.999z"/></svg>
-            <span class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-blue-400 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Twitter</span>
-        </a>
-        <!-- Dev.to -->
-        <a href="#" class="group relative transform hover:-translate-y-1 transition-transform duration-200">
-            <svg class="w-6 h-6 fill-current text-gray-300 group-hover:text-white" viewBox="0 0 24 24"><path d="M2 3.75A.75.75 0 012.75 3h18.5a.75.75 0 01.75.75v16.5a.75.75 0 01-.75.75H2.75a.75.75 0 01-.75-.75V3.75zM8.5 8.5H6v7h2.5v-7zm3.25 0H9.5v7h2.25c1.24 0 1.75-.7 1.75-1.75v-3.5c0-1.05-.51-1.75-1.75-1.75zm7.25 0h-1.5l-1.75 4.15L14.75 8.5h-1.5v7h1.5v-4.35l1.75 4.35h1.5l1.75-4.35V15.5h1.5v-7z"/></svg>
-            <span class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">DEV</span>
-        </a>
-        </div>
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="mt-10 border-t border-gray-800 pt-4 text-center text-xs text-gray-500">
-        © 2025 DevCorner • Crafted with <span class="text-green-500 animate-pulse">❤</span> in Bangkok
-    </div>
-  </footer>
-
-
-
+    </footer>
 
 </html>
