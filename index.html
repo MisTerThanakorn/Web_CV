@@ -732,15 +732,15 @@
 
                 // Show preview when an image is selected
                 input.addEventListener('change', () => {
-                if (!input.files.length) {
-                    previewContainer.classList.add('hidden');
-                    previewImg.src = '';
-                    return;
-                }
-                const file = input.files[0];
-                const url = URL.createObjectURL(file);
-                previewImg.src = url;
-                previewContainer.classList.remove('hidden');
+                    if (!input.files.length) {
+                        previewContainer.classList.add('hidden');
+                        previewImg.src = '';
+                        return;
+                    }
+                    const file = input.files[0];
+                    const url = URL.createObjectURL(file);
+                    previewImg.src = url;
+                    previewContainer.classList.remove('hidden');
                 });
 
                 // Colorize button click
@@ -751,7 +751,7 @@
                 formData.append('image', input.files[0]);
 
                 try {
-                    const res = await fetch('https://misterthanakorn.github.io/Web_CV/colorize', {
+                    const res = await fetch('http://127.0.0.1/colorize', {
                     method: 'POST',
                     body: formData
                     });
