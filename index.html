@@ -751,7 +751,7 @@
                 formData.append('image', input.files[0]);
 
                 try {
-                    const res = await fetch('http://192.168.0.106/colorize', {
+                    const res = await fetch('http://192.168.0.1:5000/colorize', {
                     method: 'POST',
                     body: formData
                     });
